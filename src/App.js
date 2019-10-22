@@ -1,6 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+let shoppingCartItems = [
+  {
+    item: 'War and Peace',
+    image: 'https://images4.penguinrandomhouse.com/cover/9781400079988',
+    description: 'War and Peace broadly focuses on Napoleon’s invasion of Russia in 1812 and follows three of the most well-known characters in literature',
+    price: 100
+  },
+]
 
 function App() {
   return (
@@ -23,7 +31,7 @@ function ShoppingCart() {
 function Product() {
   return(
     <div className="product">
-      <img src="https://images4.penguinrandomhouse.com/cover/9781400079988" width="100"/>
+      <img src={shoppingCartItems[0].image} width="100"/>
     </div>
   )
 }
