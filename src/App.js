@@ -5,21 +5,38 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Your Shopping Cart</h1>
+     <SearchForm />
+     <ShoppingCart />
     </div>
+  );
+}
+
+function ShoppingCart() {
+  return(
+    <div className="cart">
+      <Product />
+    </div>
+  );
+}
+
+function Product() {
+  return(
+    <div className="product">
+      <img src="https://images4.penguinrandomhouse.com/cover/9781400079988" width="100"/>
+    </div>
+  )
+}
+
+function SearchForm() {
+  return(
+    <form>
+      <label>
+        Search:
+        <input type="text" name="name" />
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
   );
 }
 
