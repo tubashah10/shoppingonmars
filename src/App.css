@@ -9,12 +9,17 @@
 .product {
   background: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border: 2px solid black;
   border-radius: 3px;
-  width: 100px;
-  height: 100px;
+  width: 300px;
   margin: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: beige;
 }
 
 
